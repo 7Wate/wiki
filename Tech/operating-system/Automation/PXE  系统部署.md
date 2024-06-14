@@ -8,6 +8,7 @@ keywords:
 tags:
   - Linux/安装
   - 技术/操作系统
+  - 自动化/Linux
 author: 仲平
 date: 2024-04-02
 ---

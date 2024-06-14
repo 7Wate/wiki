@@ -7,6 +7,8 @@ keywords:
   - DevOps
 tags:
   - 技术/操作系统
+  - 自动化/Linux
+  - Linux/安装
 author: 仲平
 date: 2024-05-15
 ---
