@@ -784,36 +784,115 @@ LVM 由以下三个主要组件组成：
 
 ### 常用命令
 
-| 命令        | 常用选项               | 示例                                         | 释义               |
-| ----------- | ---------------------- | -------------------------------------------- | ------------------ |
-| `pvcreate`  | `-v`、`-f`、`-M2`      | `pvcreate /dev/sdb1`                         | 创建物理卷         |
-| `vgcreate`  | `-v`、`-f`、`-M2`      | `vgcreate vg1 /dev/sdb1`                     | 创建卷组           |
-| `lvcreate`  | `-v`、`-L`、`-n`、`-i` | `lvcreate -L 10G -n lv1 vg1`                 | 创建逻辑卷         |
-| `lvextend`  | `-L`、`-r`             | `lvextend -L +5G /dev/vg1/lv1`               | 扩展逻辑卷的大小   |
-| `lvreduce`  | `-L`、`-r`             | `lvreduce -L -3G /dev/vg1/lv1`               | 减小逻辑卷的大小   |
-| `pvdisplay` | `-v`、`-m`             | `pvdisplay /dev/sdb1`                        | 显示物理卷的信息   |
-| `vgdisplay` | `-v`、`-m`             | `vgdisplay vg1`                              | 显示卷组的信息     |
-| `lvdisplay` | `-v`、`-m`             | `lvdisplay /dev/vg1/lv1`                     | 显示逻辑卷的信息   |
-| `pvmove`    | `-v`、`-n`             | `pvmove /dev/sda1 /dev/sdb1`                 | 移动物理卷上的数据 |
-| `vgextend`  | `-v`、`-a`             | `vgextend vg1 /dev/sdc1`                     | 将物理卷加入卷组   |
-| `vgreduce`  | `-v`、`-a`             | `vgreduce vg1 /dev/sdb1`                     | 从卷组中移除物理卷 |
-| `lvrename`  | `-v`、`-L`             | `lvrename /dev/vg1/oldname /dev/vg1/newname` | 重命名逻辑卷       |
+#### 物理卷 (PV) 
+
+| 命令        | 描述                 | 语法格式                              | 示例命令                                          |
+| ----------- | -------------------- | ------------------------------------- | ------------------------------------------------- |
+| `pvchange`  | 更改物理卷属性       | `pvchange [选项] 物理卷`              | `pvchange -x n /dev/sda1`                         |
+| `pvck`      | 检查物理卷的一致性   | `pvck 物理卷`                         | `pvck /dev/sda1`                                  |
+| `pvcreate`  | 创建一个新的物理卷   | `pvcreate 设备`                       | `pvcreate /dev/sda1`                              |
+| `pvdisplay` | 显示物理卷的属性     | `pvdisplay [选项] [物理卷]`           | `pvdisplay /dev/sda1`                             |
+| `pvmove`    | 移动物理卷上的数据   | `pvmove [选项] 源物理卷 [目标物理卷]` | `pvmove /dev/sda1 /dev/sdb1`                      |
+| `pvremove`  | 从卷组中移除物理卷   | `pvremove 物理卷`                     | `pvremove /dev/sda1`                              |
+| `pvresize`  | 调整物理卷的大小     | `pvresize [选项] 物理卷`              | `pvresize --setphysicalvolumesize 500G /dev/sda1` |
+| `pvs`       | 显示物理卷的概要信息 | `pvs [选项] [物理卷]`                 | `pvs`                                             |
+| `pvscan`    | 扫描系统中的物理卷   | `pvscan [选项]`                       | `pvscan`                                          |
+
+#### 卷组 (VG) 
+
+| 命令              | 描述               | 语法格式                            | 示例命令                               |
+| ----------------- | ------------------ | ----------------------------------- | -------------------------------------- |
+| `vgcfgbackup`     | 备份卷组配置       | `vgcfgbackup [选项] 卷组`           | `vgcfgbackup vg01`                     |
+| `vgcfgrestore`    | 恢复卷组配置       | `vgcfgrestore [选项] 卷组`          | `vgcfgrestore vg01`                    |
+| `vgchange`        | 更改卷组属性       | `vgchange [选项] 卷组`              | `vgchange -a y vg01`                   |
+| `vgck`            | 检查卷组的一致性   | `vgck [选项] 卷组`                  | `vgck vg01`                            |
+| `vgcreate`        | 创建一个新的卷组   | `vgcreate 卷组 物理卷...`           | `vgcreate vg01 /dev/sda1`              |
+| `vgconvert`       | 转换卷组元数据格式 | `vgconvert [选项] 卷组`             | `vgconvert --metadataformat lvm2 vg01` |
+| `vgdisplay`       | 显示卷组的属性     | `vgdisplay [选项] [卷组]`           | `vgdisplay vg01`                       |
+| `vgexport`        | 导出卷组           | `vgexport [选项] 卷组`              | `vgexport vg01`                        |
+| `vgextend`        | 向卷组中添加物理卷 | `vgextend 卷组 物理卷`              | `vgextend vg01 /dev/sdb1`              |
+| `vgimport`        | 导入卷组           | `vgimport [选项] 卷组`              | `vgimport vg01`                        |
+| `vgimportclone`   | 导入克隆卷组       | `vgimportclone [选项] 卷组`         | `vgimportclone vg01`                   |
+| `vgimportdevices` | 导入设备的卷组     | `vgimportdevices [选项] 卷组`       | `vgimportdevices vg01`                 |
+| `vgmerge`         | 合并两个卷组       | `vgmerge 卷组1 卷组2`               | `vgmerge vg01 vg02`                    |
+| `vgmknodes`       | 重建设备节点       | `vgmknodes [选项]`                  | `vgmknodes`                            |
+| `vgreduce`        | 从卷组中移除物理卷 | `vgreduce 卷组 物理卷`              | `vgreduce vg01 /dev/sda1`              |
+| `vgremove`        | 删除卷组           | `vgremove 卷组`                     | `vgremove vg01`                        |
+| `vgrename`        | 重命名卷组         | `vgrename 卷组 新名称`              | `vgrename vg01 vg02`                   |
+| `vgs`             | 显示卷组的概要信息 | `vgs [选项] [卷组]`                 | `vgs`                                  |
+| `vgscan`          | 扫描系统中的卷组   | `vgscan [选项]`                     | `vgscan`                               |
+| `vgsplit`         | 分割卷组           | `vgsplit [选项] 卷组1 卷组2 物理卷` | `vgsplit vg01 vg02 /dev/sda1`          |
+
+#### 逻辑卷 (LV) 
+
+| 命令        | 描述                 | 语法格式                    | 示例命令                                |
+| ----------- | -------------------- | --------------------------- | --------------------------------------- |
+| `lvcreate`  | 创建一个新的逻辑卷   | `lvcreate [选项] 卷组`      | `lvcreate -L 10G -n lv01 vg01`          |
+| `lvchange`  | 更改逻辑卷属性       | `lvchange [选项] 逻辑卷`    | `lvchange -ay /dev/vg01/lv01`           |
+| `lvconvert` | 转换逻辑卷类型       | `lvconvert [选项] 逻辑卷`   | `lvconvert --type raid1 /dev/vg01/lv01` |
+| `lvdisplay` | 显示逻辑卷的属性     | `lvdisplay [选项] [逻辑卷]` | `lvdisplay /dev/vg01/lv01`              |
+| `lvextend`  | 扩展逻辑卷的大小     | `lvextend [选项] 逻辑卷`    | `lvextend -L +5G /dev/vg01/lv01`        |
+| `lvreduce`  | 缩减逻辑卷的大小     | `lvreduce [选项] 逻辑卷`    | `lvreduce -L 5G /dev/vg01/lv01`         |
+| `lvremove`  | 删除逻辑卷           | `lvremove 逻辑卷`           | `lvremove /dev/vg01/lv01`               |
+| `lvrename`  | 重命名逻辑卷         | `lvrename 逻辑卷 新名称`    | `lvrename /dev/vg01/lv01 lv02`          |
+| `lvresize`  | 调整逻辑卷的大小     | `lvresize [选项] 逻辑卷`    | `lvresize -L 15G /dev/vg01/lv01`        |
+| `lvs`       | 显示逻辑卷的概要信息 | `lvs [选项] [逻辑卷]`       | `lvs`                                   |
+| `lvscan`    | 扫描系统中的逻辑卷   | `lvscan [选项]`             | `lvscan`                                |
+
+#### 其他命令
+
+| 命令                | 描述                   | 语法格式                   | 示例命令                        |
+| ------------------- | ---------------------- | -------------------------- | ------------------------------- |
+| `lvm`               | LVM 命令的主入口       | `lvm [命令]`               | `lvm`                           |
+| `lvm.conf`          | LVM 配置文件           | `n/a`                      | `n/a`                           |
+| `lvmconfig`         | 显示和更新 LVM 配置    | `lvmconfig [选项]`         | `lvmconfig --type full`         |
+| `lvmdevices`        | 管理 LVM 设备          | `lvmdevices [选项]`        | `lvmdevices --adddev /dev/sda1` |
+| `lvm-fullreport`    | 显示 LVM 完整报告      | `lvm-fullreport [选项]`    | `lvm-fullreport`                |
+| `lvm-lvpoll`        | 轮询 LVM 逻辑卷        | `lvm-lvpoll [选项]`        | `lvm-lvpoll`                    |
+| `blkdeactivate`     | 停用块设备             | `blkdeactivate [选项]`     | `blkdeactivate all`             |
+| `lvmdump`           | 创建 LVM 状态转储文件  | `lvmdump [选项]`           | `lvmdump --dumpconfig`          |
+| `dmeventd`          | 设备映射事件守护进程   | `dmeventd [选项]`          | `dmeventd -d`                   |
+| `lvmpolld`          | LVM 轮询守护进程       | `lvmpolld [选项]`          | `lvmpolld -d`                   |
+| `lvmlockd`          | LVM 锁定守护进程       | `lvmlockd [选项]`          | `lvmlockd -d`                   |
+| `lvmlockctl`        | 控制 LVM 锁定          | `lvmlockctl [选项]`        | `lvmlockctl --gl`               |
+| `cmirrord`          | 集群镜像守护进程       | `cmirrord [选项]`          | `cmirrord -d`                   |
+| `lvmdbusd`          | LVM D-Bus 守护进程     | `lvmdbusd [选项]`          | `lvmdbusd -d`                   |
+| `fsadm`             | 文件系统调整           | `fsadm [选项] 操作`        | `fsadm resize /dev/vg01/lv01`   |
+| `lvmsystemid`       | 显示 LVM 系统 ID       | `lvmsystemid [选项]`       | `lvmsystemid`                   |
+| `lvmreport`         | 生成 LVM 报告          | `lvmreport [选项]`         | `lvmreport --all`               |
+| `lvmcache`          | 管理 LVM 缓存          | `lvmcache [选项]`          | `lvmcache --config`             |
+| `lvmraid`           | 管理 LVM RAID          | `lvmraid [选项]`           | `lvmraid --status`              |
+| `lvmthin`           | 管理 LVM 精简卷        | `lvmthin [选项]`           | `lvmthin --usage`               |
+| `lvmvdo`            | 管理 LVM VDO           | `lvmvdo [选项]`            | `lvmvdo --status`               |
+| `lvmautoactivation` | 自动激活 LVM 逻辑卷    | `lvmautoactivation [选项]` | `lvmautoactivation --status`    |
+| `dmsetup`           | 设备映射器的命令行接口 | `dmsetup [命令]`           | `dmsetup status`                |
+| `dmstats`           | 设备映射器统计信息     | `dmstats [命令]`           | `dmstats list`                  |
+| `readline`          | 命令行编辑库           | `n/a`                      | `n/a`                           |
 
 ### 常用选项
 
-| 选项/全拼                 | 释义                                   |
-| ------------------------- | -------------------------------------- |
-| `-v, --verbose`           | 显示详细的信息                         |
-| `-f, --force`             | 强制执行操作                           |
-| `-M2, --metadatacopies 2` | 设置元数据区域的备份级别               |
-| `-L, --size`              | 指定逻辑卷的大小                       |
-| `-n, --name`              | 指定逻辑卷的名称                       |
-| `-i, --stripes`           | 指定逻辑卷的副本数                     |
-| `-r, --resizefs`          | 在逻辑卷大小改变后自动执行文件系统调整 |
-| `-m, --maps`              | 显示逻辑卷的映射信息                   |
-| `-a, --all`               | 将所有未使用的物理卷都添加到卷组中     |
+| 选项/全拼                 | 释义                                     |
+| ------------------------- | ---------------------------------------- |
+| `-v, --verbose`           | 显示详细的信息                           |
+| `-f, --force`             | 强制执行操作                             |
+| `-L, --size`              | 指定逻辑卷的大小                         |
+| `-n, --name`              | 指定逻辑卷的名称                         |
+| `-i, --stripes`           | 指定逻辑卷的条带数                       |
+| `-r, --resizefs`          | 在逻辑卷大小改变后自动调整文件系统       |
+| `-a, --activate`          | 激活或停用卷                             |
+| `-y, --yes`               | 自动回答“是”以确认操作                   |
+| `-P, --partial`           | 允许部分操作完成                         |
+| `--addtag`                | 向卷、卷组或物理卷添加标签               |
+| `--deltag`                | 从卷、卷组或物理卷删除标签               |
+| `--config`                | 使用特定配置文件                         |
+| `--metadatacopies n`      | 设置元数据区域的备份级别为 n             |
+| `--setphysicalvolumesize` | 调整物理卷的大小                         |
+| `-l, --extents`           | 指定逻辑卷的大小，以PE（物理扩展）的数量 |
+| `-s, --snapshot`          | 创建逻辑卷的快照                         |
+| `-t, --test`              | 运行测试模式，不实际执行命令             |
+| `-v, --verbose`           | 显示详细输出                             |
 
-### 操作示例
+### LVM 示例
 
 ```mermaid
 graph LR;
