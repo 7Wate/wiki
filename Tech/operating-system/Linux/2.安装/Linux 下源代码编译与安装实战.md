@@ -1,6 +1,6 @@
 ---
-title: Linux 下源代码编译与安装实战指南
-description: Linux 下源代码编译与安装实战指南
+title: Linux 下源代码编译与安装实战
+description: Linux 下源代码编译与安装实战
 keywords:
   - Linux
   - 源代码编译
