@@ -58,7 +58,7 @@ Linux 多用户系统的实现基于以下机制：
 
 ### 创建
 
-#### useradd
+#### Useradd
 
 `useradd` 命令是 Linux 系统中的一个命令行工具，用于创建新用户帐户。通过 `useradd` 命令，可以指定新用户的用户名、用户 ID（UID）、主目录、默认 shell 和密码等信息。
 
@@ -82,7 +82,7 @@ sudo useradd john
 | `-s, --shell SHELL`            | 指定用户的默认 shell。                              | `sudo useradd -s /bin/bash john`       |
 | `-u, --uid UID`                | 指定用户的 UID。                                    | `sudo useradd -u 1001 john`            |
 
-#### adduser
+#### Adduser
 
 **`adduser` 命令是 Linux 系统中的一个高层次的用户添加工具，它提供了比 `useradd` 更加用户友好的界面和交互过程。**`adduser` 通常作为一个 Perl 脚本，封装了 `useradd` 命令，并在用户创建过程中进行一些附加的配置工作，如创建主目录、复制模板文件、设置密码等。
 
@@ -116,7 +116,7 @@ sudo adduser john
 
 ### 管理
 
-#### chfn
+#### Chfn
 
 `chfn` （change finger information）命令用于更改用户的 GECOS 信息。GECOS 字段包含用户的全名、办公地址、办公电话和家庭电话等信息。通常，这些信息存储在 `/etc/passwd` 文件中
 
@@ -143,7 +143,7 @@ Enter the new value, or press ENTER for the default
 | `-q, --quiet`            | 安静模式，不输出任何信息。                                   | `chfn -q`                        |
 | `-v, --verbose`          | 显示详细信息。                                               | `chfn -v`                        |
 
-#### chsh
+#### Chsh
 
 `chsh` （change shell）命令用于更改用户的默认登录 shell。通过 `chsh` 命令，用户可以选择不同的 shell 来作为他们的登录环境。在 Linux 系统中，常见的 shell 有 `bash`、`zsh`、`ksh`、`csh` 等。
 
@@ -181,7 +181,7 @@ chsh -s /bin/bash john
 | `nologin`   | 禁止用户登录 Shell，但允许 FTP 等非交互式服务。        | 禁止交互登录，显示消息，安全性控制               | 禁止交互登录的用户，提供非交互服务           |
 | `git-shell` | 专为 Git 用户设计的 Shell，限制用户只能执行 Git 命令。 | 限制用户只能使用 Git 命令，增强代码管理安全性    | Git 服务器环境，限制用户操作，代码管理服务器 |
 
-#### chage
+#### Chage
 
 `chage` （change age）命令用于更改用户密码的有效期和过期信息。系统管理员可以通过 `chage` 命令来设置用户密码的到期时间、警告时间和账户失效时间等，从而增强系统的安全性。
 
@@ -203,7 +203,7 @@ sudo chage -l john
 
 *日期格式应为 YYYY-MM-DD，如果不指定具体日期，可以使用 `-1` 表示永不过期。*
 
-#### passwd
+#### Passwd
 
 `passwd` （password）命令是 Linux 系统中的一个命令行工具，用于更改用户的密码或口令。默认情况下，每个 Linux 用户都有一个口令或密码来保护其账户的安全性。`passwd` 命令可用于更改密码或口令。
 
@@ -229,7 +229,7 @@ passwd john
 | `-w, --warndays WARN_DAYS` | 设置密码过期前的警告天数。                         | `sudo passwd -w 7 john`  |
 | `-q, --quiet`              | 安静模式，不输出任何信息。                         | `passwd -q`              |
 
-#### usermod
+#### Usermod
 
 `usermod`（user modify）命令是 Linux 系统中的一个命令行工具，用于修改用户的属性或配置。`usermod` 命令允许您更改现有用户的用户名、UID、主目录、默认 shell 等信息，还可以将用户添加到其他用户组中。
 
@@ -253,7 +253,7 @@ passwd john
 
 ### 删除
 
-#### userdel
+#### Userdel
 
 `userdel`（User Delete）命令是 Linux 系统中的一个命令行工具，用于删除现有用户帐户。默认情况下，`userdel` 命令仅删除用户的帐户，而不删除用户的主目录和邮件箱。如果需要删除用户的主目录和邮件箱，可以使用 `-r` 选项。
 
@@ -277,7 +277,7 @@ sudo userdel john
 
 ### 创建
 
-#### groupadd
+#### Groupadd
 
 `groupadd` 命令是 Linux 系统中的一个命令行工具，用于创建新的用户组。管理员用户（如 root 用户）可以使用 `groupadd` 命令创建新组。
 
@@ -296,7 +296,7 @@ sudo groupadd newgroup
 
 ### 管理
 
-#### groups
+#### Groups
 
 `groups` 命令是 Linux 系统中的一个命令行工具，用于显示当前用户所属的用户组。如果没有指定用户名，则 `groups` 命令将显示当前用户所属的用户组。
 
@@ -308,7 +308,7 @@ groups
 groups john
 ```
 
-#### gpasswd
+#### Gpasswd
 
 `gpasswd` （group password）命令是 Linux 系统中的一个命令行工具，用于管理用户组的密码和成员列表。管理员用户（如 root 用户）可以使用 `gpasswd` 命令来添加或删除用户组的成员，或者设置或删除用户组的密码。
 
@@ -326,7 +326,7 @@ sudo gpasswd newgroup
 | `-A, --administrators user,...` | 设置组管理员。                                   | `sudo gpasswd -A admin1,admin2 developers` |
 | `-M, --members user,...`        | 设置组成员，覆盖现有成员。                       | `sudo gpasswd -M john,doe developers`      |
 
-#### groupmod
+#### Groupmod
 
 `groupmod` （group modify）命令是 Linux 系统中的一个命令行工具，用于修改已有用户组的属性，例如组 ID、组名称和组密码等。管理员用户（如 root 用户）可以使用 `groupmod` 命令来更改用户组的属性。
 
@@ -344,7 +344,7 @@ sudo groupmod -n newname oldname
 
 ### 删除
 
-#### groupdel
+#### Groupdel
 
 `groupdel` （group delete）是 Linux 系统中的一个命令行工具，用于删除一个用户组。删除用户组时，系统会自动将该组的所有成员从该组中删除，并将文件和目录中的组 ID 更改为其他组。
 
@@ -364,7 +364,7 @@ sudo groupdel newgroup
 
 在 Linux 系统中，root 是超级用户，具有完全的系统管理权限。root 用户可以执行任何命令，并访问系统中的所有文件和资源。在默认情况下，root 用户的密码是空的，因此在安全性方面需要额外注意。
 
-### su
+### Su
 
 `su`（switch user）命令是 Linux 系统中的一个命令行工具，它允许您在不注销当前用户的情况下切换到其他用户帐户。默认情况下，`su` 命令切换到超级用户帐户（root）。
 
@@ -393,7 +393,7 @@ su debian
 | `-h, --help`                 | 显示帮助信息。                                | `su -h`                |
 | `-v, --version`              | 显示版本信息。                                | `su -v`                |
 
-### sudo
+### Sudo
 
 在 Unix 和类 Unix 系统中，`sudo` 是一个强大的工具，允许普通用户以超级用户（root）的权限来执行特定的命令或访问受限资源。`sudo` 命令的行为由一个配置文件定义，这个文件通常称为 `sudoers` 文件。
 
@@ -460,7 +460,7 @@ sudo -l -U username
 | `-h, --help`            | 显示 `sudo` 命令的帮助信息。                                 | `sudo -h`                               |
 | `-V, --version`         | 显示 `sudo` 命令的版本信息。                                 | `sudo -V`                               |
 
-### newusers
+### Newusers
 
 `newusers` 是一个 Linux 系统命令，用于批量创建新的用户账号。该命令可以从指定的文件中读取一组用户信息，并自动创建这些用户账号，设置相应的密码、主目录和 shell。
 
@@ -474,13 +474,13 @@ sudo -l -U username
 
 - 用户名：新用户的登录名。
 - 密码：用户的密码，通常以加密格式存储。
-- 用户ID（UID）：新用户的用户标识符。
-- 主组ID（GID）：新用户的主组标识符。
+- 用户 ID（UID）：新用户的用户标识符。
+- 主组 ID（GID）：新用户的主组标识符。
 - 注释字段：用户的全名或其他描述信息。
 - 主目录：用户的主目录路径。
-- 默认shell：用户登录时的默认shell。
+- 默认 shell：用户登录时的默认 shell。
 
-#### 使用 newusers 批量创建
+#### 使用 Newusers 批量创建
 
 ```shell
 -------------------- user.txt --------------------
@@ -502,7 +502,7 @@ newusers user.txt
 | `-H, --no-create-home` | 禁止创建用户主目录         | `newusers -H users.txt`, `newusers --no-create-home users.txt` |
 | `-N, --no-user-group`  | 禁止创建与用户名同名的主组 | `newusers -N users.txt`, `newusers --no-user-group users.txt` |
 
-### chpasswd
+### Chpasswd
 
 `chpasswd` 命令用于批量修改用户的密码，可以一次性修改多个用户的密码，而不需要逐个输入密码。它可以从标准输入、文件或命令行参数中读取用户密码信息，并将其应用于指定的用户账户。
 
@@ -518,7 +518,7 @@ user1:password1
 user2:password2
 ```
 
-#### 使用 chpasswd 批量更改
+#### 使用 Chpasswd 批量更改
 
 ```shell
 -------------------- users.txt --------------------
@@ -583,7 +583,7 @@ sudo chpasswd -m < users.txt
 
 ## 其他
 
-### w
+### W
 
 `w` 命令在 Unix 和 Unix 类操作系统中用于显示有关系统活动的信息。这个命令可以显示当前系统中登录的用户、他们所做的事情、从哪里登录、他们登录的时间以及系统负载等。
 
@@ -595,7 +595,7 @@ sevenwat tty1     -                二16   22:15m  0.16s  0.05s -bash
 sevenwat pts/0    172.17.0.100     13:55    0.00s  0.51s  0.13s sshd: sevenwate [priv]
 ```
 
-### id
+### Id
 
 `id` 命令用于显示用户和用户组的标识信息。它可以用于查看当前用户或指定用户的 UID（用户标识符）、GID（组标识符）和所属用户组的名称。
 
@@ -604,7 +604,7 @@ sevenwate@LinuxTest:~$ id
 用户id=1000(sevenwate) 组id=1000(sevenwate) 组=1000(sevenwate),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),108(netdev),1001(grpdemo)
 ```
 
-### whoami
+### Whoami
 
 `whoami` 命令用于显示当前登录用户的用户名。它是一个非常简单的命令，通常用于 shell 脚本和命令行中，以便在需要当前用户的用户名时快速获取它。
 
@@ -613,7 +613,7 @@ sevenwate@LinuxTest:~$ whoami
 sevenwate
 ```
 
-### last
+### Last
 
 `last` 命令在 Linux 中用于显示系统的登录记录。这个命令列出了系统登录和启动的详细信息，如登录用户、登录的 IP 地址、登录时间以及登录持续的时间。
 
@@ -635,7 +635,7 @@ reboot   system boot  5.10.0-23-amd64  Tue May 30 16:00   still running
 wtmp begins Tue May 30 16:00:47 2023
 ```
 
-### lastlog
+### Lastlog
 
 `lastlog` 命令用于查看所有用户最后一次登录的时间和登录的终端。这个命令检查 `/var/log/lastlog` 文件以确定每个用户的最后一次登录信息。此命令的输出包含用户名、最后登录的端口和最后登录的时间。
 
