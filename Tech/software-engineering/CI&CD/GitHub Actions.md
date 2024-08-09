@@ -1,10 +1,15 @@
 ---
 title: GitHub Actions
-description: 描述
+description: GitHub Actions 是 GitHub 提供的持续集成和持续交付（CI/CD）平台，允许开发者自动化他们的软件项目构建、测试和部署流程。通过在 GitHub 仓库中定义 YAML 格式的工作流文件，可以响应如代码提交或发布标签等 GitHub 事件来触发任务执行。GitHub Actions 支持跨平台运行，具备事件驱动、易于编写的 YAML 配置、安全性特性，以及提供了丰富的官方和社区 Actions 来简化工作流配置。
 keywords:
-  - 关键字
+  - GitHub Actions
+  - CI&CD
+  - 自动化
+  - YAML
+  - 跨平台
 tags:
-  - 标签
+  - 技术/软件工程
+  - 软件工程/CICD
 author: 仲平
 date: 2024-08-07
 ---
