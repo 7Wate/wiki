@@ -161,7 +161,7 @@
       "enabled": true
     },
     "empty-line-around-code-fences": {
-      "enabled": true
+      "enabled": false
     },
     "empty-line-around-math-blocks": {
       "enabled": true
@@ -205,7 +205,9 @@
       "enabled": false
     },
     "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
-      "enabled": true
+      "enabled": true,
+      "english-symbols-punctuation-before": "-+;:'\"°%$)]",
+      "english-symbols-punctuation-after": "-+'\"([¥$"
     },
     "trailing-spaces": {
       "enabled": true,
@@ -234,6 +236,28 @@
     },
     "remove-multiple-blank-lines-on-paste": {
       "enabled": false
+    },
+    "add-blank-line-after-yaml": {
+      "enabled": false
+    },
+    "dedupe-yaml-array-values": {
+      "enabled": false,
+      "dedupe-alias-key": true,
+      "dedupe-tag-key": true,
+      "dedupe-array-keys": true,
+      "ignore-keys": ""
+    },
+    "sort-yaml-array-values": {
+      "enabled": false,
+      "sort-alias-key": true,
+      "sort-tag-key": true,
+      "sort-array-keys": true,
+      "ignore-keys": "",
+      "sort-order": "Ascending Alphabetical"
+    },
+    "default-language-for-code-fences": {
+      "enabled": false,
+      "default-language": ""
     }
   },
   "lintOnSave": true,
@@ -243,6 +267,7 @@
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [],
+  "filesToIgnore": [],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
   "lintCommands": [],
