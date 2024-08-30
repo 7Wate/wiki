@@ -5,13 +5,13 @@
   "daily": {
     "format": "YYYY/[W]W/YYYY-MM-DD",
     "template": "Templates/日志 - 日记模板.md",
-    "folder": "Journal",
+    "folder": "Personal/Journal",
     "enabled": true
   },
   "weekly": {
     "format": "YYYY/[W]W/YYYY-[W]W",
     "template": "Templates/日志 - 周记模板.md",
-    "folder": "Journal",
+    "folder": "Personal/Journal",
     "enabled": true
   },
   "monthly": {
@@ -22,7 +22,7 @@
   "quarterly": {
     "format": "YYYY/YYYY-[Q]Q",
     "template": "Templates/日志 - 季度模板.md",
-    "folder": "Journal",
+    "folder": "Personal/Journal",
     "enabled": true
   },
   "yearly": {

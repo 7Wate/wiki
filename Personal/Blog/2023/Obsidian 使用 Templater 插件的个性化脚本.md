@@ -35,7 +35,7 @@ Templater 插件允许执行用户个性化脚本，我基于 Templater 利用 C
  * @returns {Promise<string>} 天气信息
  */
 
-<% tp.user.wttr_weather("郑州", "m&format=%l+%t+%c&lang=zh") %>
+郑州 +31°C ⛅️ 
 
 
 /**
@@ -43,14 +43,14 @@ Templater 插件允许执行用户个性化脚本，我基于 Templater 利用 C
  * @returns {Promise<string>} 返回格式化后的诗词
  */
 
-<% tp.user.jinrishici() %>
+接天莲叶无穷碧，映日荷花别样红。——杨万里（宋代）
 
 /**
  * 获取一言
  * @param {Object} options - 请求的参数
  * @returns {Promise<string>} 返回一言的句子
  */
- <% tp.user.hitokoto({ c: 'a' }) %>
+ 明明只是活着，哀伤却无处不在…
 
 ```
 

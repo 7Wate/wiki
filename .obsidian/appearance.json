@@ -1,11 +1,11 @@
 {
-  "theme": "obsidian",
+  "theme": "system",
   "cssTheme": "Minimal",
-  "interfaceFontFamily": "",
-  "baseFontSize": 18,
+  "interfaceFontFamily": "MiSans,Noto Sans CJK SC",
+  "baseFontSize": 20,
   "translucency": false,
-  "textFontFamily": "",
-  "monospaceFontFamily": "",
+  "textFontFamily": "Noto Serif CJK SC",
+  "monospaceFontFamily": "Source Code Pro",
   "baseFontSizeAction": true,
   "accentColor": "",
   "nativeMenus": false

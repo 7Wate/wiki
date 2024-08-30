@@ -7,11 +7,9 @@
   "trashOption": "system",
   "promptDelete": false,
   "communityPluginSortOrder": "download",
-  "attachmentFolderPath": "Static",
+  "attachmentFolderPath": "Obsidian/Static",
   "userIgnoreFilters": [
-    "Static/",
-    "Journal/",
-    "Templates/"
+    "Obsidian/"
   ],
   "newFileLocation": "current",
   "defaultViewMode": "preview",
@@ -19,5 +17,7 @@
   "vimMode": false,
   "newLinkFormat": "absolute",
   "propertiesInDocument": "visible",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true,
+  "showRibbon": true
 }

@@ -1,24 +1,20 @@
 {
   "cookies": [
     {
-      "name": "wr_fp",
-      "value": "3610854600"
+      "name": "wr_gid",
+      "value": "250277387"
     },
     {
-      "name": "wr_gid",
-      "value": "238733667"
+      "name": "wr_skey",
+      "value": "NjBVzmhm"
     },
     {
       "name": "wr_vid",
       "value": "389106381"
     },
     {
-      "name": "wr_pf",
-      "value": "0"
-    },
-    {
       "name": "wr_rt",
-      "value": "web@IewbrecPwPFRuK_KzTh_AL"
+      "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.6.7 Chrome/124.0.6367.243 Electron/30.1.2 Safa"
     },
     {
       "name": "wr_localvid",
@@ -30,23 +26,19 @@
     },
     {
       "name": "wr_avatar",
-      "value": "https://thirdwx.qlogo.cn/mmopen/vi_32/Ws8ibkHcBXXw09Fpz2FpJJgHWdN6Em7FNxjPTU1C1icGR8CYC67TUicEWzaXDq1YDcpGDrMkQeyNYHWk8S94icJcyQ/132"
+      "value": "https://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEJQvJx5ooPnrO6BLJRiarDmZ2zexceNq8OyUYuBGszUoeh4sRic8DtL8eRJz73m6r8j4qMuicNhy9J5Z6jXyDVFOz7XPXlQqIPObp7Nv3bp5GcJw/132"
     },
     {
       "name": "wr_gender",
       "value": "1"
-    },
-    {
-      "name": "wr_skey",
-      "value": "pJA0MaZ9"
     }
   ],
-  "noteLocation": "Book",
+  "noteLocation": "Personal/Book",
   "dailyNotesLocation": "/",
   "insertAfter": "<!-- start of weread -->",
   "insertBefore": "<!-- end of weread -->",
   "dailyNotesFormat": "YYYY-MM-DD",
-  "lastCookieTime": 1702183839906,
+  "lastCookieTime": 1724991063246,
   "isCookieValid": true,
   "user": "仲平",
   "userVid": "389106381",
@@ -55,5 +47,9 @@
   "subFolderType": "category",
   "fileNameType": "BOOK_NAME",
   "dailyNotesToggle": false,
-  "notesBlacklist": ""
+  "notesBlacklist": "",
+  "showEmptyChapterTitleToggle": false,
+  "convertTags": false,
+  "saveArticleToggle": true,
+  "saveReadingInfoToggle": true
 }
