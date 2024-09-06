@@ -1,0 +1,36 @@
+name: Build and Deploy Quartz Site
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clone repositories
+      run: |
+        git clone https://github.com/7Wate/wiki-quartz.git $HOME/wiki/quartz && rm -rf $HOME/wiki/quartz/content
+        git clone https://github.com/7Wate/wiki.git $HOME/wiki/quartz/content
+
+    - name: Set up Node.js 20
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'
+
+    - name: Install dependencies and build site
+      run: |
+        mv $HOME/wiki/quartz/content/README.md $HOME/wiki/quartz/content/index.md
+        sed -i '1d' $HOME/wiki/quartz/content/index.md && sed -i '1i ---\ntitle: 数字花园\n---' $HOME/wiki/quartz/content/index.md
+        cd $HOME/wiki/quartz && npm ci && npx quartz build
+        mkdir -p $HOME/wiki/public/ && cp -r public/* $HOME/wiki/public/
+
+    - name: Deploy to Gitea
+      run: |
+        git config --global user.name "Github Actions"
+        git config --global user.email "zhouzhongping@7wate.com"
+        cd $HOME/wiki/public/ && git init && git add .
+        DATE=`date '+%Y-%m-%d'`
+        git commit -m "Deploy HTML files - $DATE"
+        git remote add gitea https://${{ secrets.GITEA_PUSH_PULL_TOKEN }}@git.7wate.com/zhouzhongping/wiki.git
+        git checkout -b quartz && git push gitea quartz --force
