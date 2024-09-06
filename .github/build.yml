@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository (quartz)
-      run: git clone https://${{ secrets.GIT_PUSH_PULL_TOKEN }}@git.7wate.com/zhouzhongping/quartz-wiki.git /wiki/quartz
+      run: git clone https://github.com/7Wate/wiki-quartz.git /wiki/quartz
   
     - name: Clone repository (wiki)
-      run: git clone https://${{ secrets.GIT_PUSH_PULL_TOKEN }}@git.7wate.com/zhouzhongping/wiki.git /wiki/quartz/content
+      run: git clone https://github.com/7Wate/wiki.git /wiki/quartz/content
 
     - name: Set up Node.js 20
       uses: actions/setup-node@v2
@@ -21,9 +21,10 @@ jobs:
 
     - name: Install Quartz dependencies and Build site
       run: |
-        # 移除 Quartz 项目 content 目录下的 README 文件
-        rm -f /wiki/quartz/content/README.md
-        
+        # 设置 README 为首页，并且添加标题
+        mv /wiki/quartz/content/README.md /wiki/quartz/content/index.md
+        sed -i '1i ---\ntitle: X·Eden\n---' /wiki/quartz/content/index.md
+
         # 进入 Quartz 项目目录，安装依赖并构建网站
         cd /wiki/quartz && npm ci && npx quartz build
 
@@ -33,8 +34,8 @@ jobs:
     - name: Deploy to HTML branch of current repository (A仓库)
       run: |
         # 设置 Git 用户名和邮箱
-        git config --global user.name "Actions"
-        git config --global user.email "actions@7wate.com"
+        git config --global user.name "Github Actions"
+        git config --global user.email "zhouzhongping@7wate.com"
 
         # 在 public 目录下初始化 git 仓库
         cd /wiki/public/ && git init && git add .
@@ -44,7 +45,7 @@ jobs:
         git commit -m "Deploy HTML files - $DATE"
 
         # 添加远程仓库地址
-        git remote add origin https://${{ secrets.GIT_PUSH_PULL_TOKEN }}@git.7wate.com/zhouzhongping/wiki.git
+        git remote add gitea https://${{ secrets.GITEA_PUSH_PULL_TOKEN }}@git.7wate.com/zhouzhongping/wiki.git
 
         # 强制推送到远程的 html 分支
-        git checkout -b quartz && git push origin quartz --force
+        git checkout -b quartz && git push gitea quartz --force
