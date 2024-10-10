@@ -1,3 +1,24 @@
+---
+title: Jenkins
+description: 本文详细介绍了Jenkins，一种开源自动化服务器，在持续集成（CI）和持续交付（CD）中的关键作用。文章探讨了Jenkins的历史、架构、工作原理，以及如何通过插件系统实现高度可扩展性。同时，比较了Jenkins与其他CI/CD工具，并提供了安装、配置、系统设置、用户管理、插件管理和更新、以及Jenkins Job类型和Pipeline脚本的深入指南。此外，还讨论了源码管理、构建触发器、构建步骤、Pipeline语法、动态参数化构建、Groovy语法、安全管理、CI流程、多分支流水线、并行作业、第三方服务集成、持续交付策略、共享库、部署到云平台以及性能优化和故障排查。
+keywords:
+  - Jenkins
+  - CI&CD
+  - 插件系统
+  - 安装配置
+  - 用户管理
+  - Pipeline
+  - 安全
+  - 多分支
+  - 云平台
+  - 性能优化
+tags:
+  - 技术/软件工程
+  - 软件工程/自动化流程
+author: 仲平
+date: 2024-10-10
+---
+
 ## Jenkins 概述
 
 ![Jenkins_logo_with_title.svg](https://static.7wate.com/2024/08/09/a76a2f574c2b5.svg)
