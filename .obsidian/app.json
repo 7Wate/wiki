@@ -5,7 +5,7 @@
   "spellcheck": false,
   "spellcheckLanguages": null,
   "trashOption": "system",
-  "promptDelete": false,
+  "promptDelete": true,
   "communityPluginSortOrder": "download",
   "attachmentFolderPath": "Obsidian/Static",
   "userIgnoreFilters": [

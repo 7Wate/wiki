@@ -1,17 +1,23 @@
 {
   "workspaces": {
-    "wiki": {
+    "Wiki": {
       "main": {
         "id": "1f445337c2d6e92a",
         "type": "split",
         "children": [
           {
-            "id": "839e2665bf4e243d",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
+            "id": "13a3726b4ef31e8d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "460d0a91311dc759",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                }
+              }
+            ]
           }
         ],
         "direction": "vertical"
@@ -25,10 +31,20 @@
             "type": "tabs",
             "children": [
               {
-                "id": "32e3954140b6c675",
+                "id": "c904d9c18530b1a4",
                 "type": "leaf",
                 "state": {
                   "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "db4ea1109bd6a239",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
                   "state": {}
                 }
               },
@@ -51,7 +67,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 218
+        "width": 243.5
       },
       "right": {
         "id": "b6d0f50ff4f93745",
@@ -62,10 +78,10 @@
             "type": "tabs",
             "children": [
               {
-                "id": "216a95b1562d56d5",
+                "id": "c5fde77b8d301a14",
                 "type": "leaf",
                 "state": {
-                  "type": "calendar",
+                  "type": "outline",
                   "state": {}
                 }
               },
@@ -81,29 +97,74 @@
                 }
               },
               {
-                "id": "c5fde77b8d301a14",
+                "id": "a20a074017c35a60",
                 "type": "leaf",
                 "state": {
-                  "type": "outline",
-                  "state": {}
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  }
                 }
               },
               {
-                "id": "93a288f062a4606b",
+                "id": "cfb0333dab4cdf3a",
                 "type": "leaf",
                 "state": {
-                  "type": "git-view",
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "a2ba99684228f28f",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "216a95b1562d56d5",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
                   "state": {}
                 }
               }
-            ]
+            ],
+            "currentTab": 5
           }
         ],
         "direction": "horizontal",
-        "width": 264.5
+        "width": 358.5
       },
-      "active": "839e2665bf4e243d"
+      "left-ribbon": {
+        "hiddenItems": {
+          "periodic-notes:Open today": false,
+          "templater-obsidian:Templater": false,
+          "canvas:新建白板": false,
+          "obsidian-excalidraw-plugin:新建绘图文件": false,
+          "obsidian-weread-plugin:同步微信读书笔记": false,
+          "command-palette:打开命令面板": false,
+          "graph:查看关系图谱": false,
+          "workspaces:管理工作区布局": false
+        }
+      },
+      "active": "c904d9c18530b1a4",
+      "mtime": "2024-10-12T17:18:50+08:00"
     }
   },
-  "active": "wiki"
+  "active": "Wiki"
 }
