@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": "Obsidian/Static",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "🧰",
+      "📐",
+      "📚",
+      "💼",
+      "🧑‍💻"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false
+  },
+  "Archive": "📦",
+  "NaturalSciences": "🌍",
+  "Personal": "🧑‍💻",
+  "SocialSciences": "📚",
+  "FormalSciences": "📐",
+  "Obsidian": "🧰",
+  "Professional": "💼"
+}
