@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "30070658"
-author: 仲平
-cover: https://cdn.weread.qq.com/weread/cover/81/YueWen_30070658/t7_YueWen_30070658.jpg
 reviewCount: 0
 noteCount: 10
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/81/YueWen_30070658/t7_YueWen_30070658.jpg
 readingStatus: 读完
 progress: 100%
 totalReadDay: 1
@@ -17,9 +17,9 @@ keywords:
   - 从0到1：HTML+CSS快速上手
   - 莫振杰
 tags:
-  - 阅读/计算机-编程设计
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-编程设计
+date: 2024-10-14
 
 ---
 

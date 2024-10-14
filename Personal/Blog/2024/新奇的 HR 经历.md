@@ -6,8 +6,8 @@ keywords:
   - 面试
   - 求职
 tags:
-  - 博客/原创
-  - 工作/面试
+  - Blog/随笔
+  - Personal/Blog
 authors:
   - 仲平
 date: 2024-02-18

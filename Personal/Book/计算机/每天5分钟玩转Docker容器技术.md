@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "26943492"
-author: 仲平
-cover: https://cdn.weread.qq.com/weread/cover/41/YueWen_26943492/t7_YueWen_26943492.jpg
 reviewCount: 0
 noteCount: 16
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/41/YueWen_26943492/t7_YueWen_26943492.jpg
 readingStatus: 读完
 progress: 99%
 totalReadDay: 3
@@ -17,9 +17,9 @@ keywords:
   - 每天5分钟玩转Docker容器技术
   - CloudMan
 tags:
-  - 阅读/计算机-计算机综合
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-计算机综合
+date: 2024-10-14
 
 ---
 

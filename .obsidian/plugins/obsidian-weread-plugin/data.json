@@ -1,12 +1,16 @@
 {
   "cookies": [
     {
+      "name": "wr_fp",
+      "value": "1716399292"
+    },
+    {
       "name": "wr_gid",
-      "value": "250277387"
+      "value": "240591388"
     },
     {
       "name": "wr_skey",
-      "value": "NjBVzmhm"
+      "value": "aMTBh1pQ"
     },
     {
       "name": "wr_vid",
@@ -14,7 +18,7 @@
     },
     {
       "name": "wr_rt",
-      "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.6.7 Chrome/124.0.6367.243 Electron/30.1.2 Safa"
+      "value": "web@F9pw66GvvYx2OyxLGDG_AL"
     },
     {
       "name": "wr_localvid",
@@ -38,11 +42,11 @@
   "insertAfter": "<!-- start of weread -->",
   "insertBefore": "<!-- end of weread -->",
   "dailyNotesFormat": "YYYY-MM-DD",
-  "lastCookieTime": 1724991063246,
+  "lastCookieTime": 1728889003501,
   "isCookieValid": true,
   "user": "仲平",
   "userVid": "389106381",
-  "template": "---\ntitle: {{metaData.title}}\ndescription: {{metaData.intro}}\nkeywords:\n  - {{metaData.title}}\n  - {{metaData.author}}\ntags:\n  - 阅读/{{metaData.category}}\nauthor: 仲平\ndate: <% tp.date.now(\"YYYY-MM-DD\") %>\n---\n\n## 简介\n\n- **书名**：《{{metaData.title}}》\n- **作者**： {{metaData.author}}\n- **分类**： {{metaData.category}}\n- **ISBN**：{{metaData.isbn}}\n- **出版社**：{{metaData.publisher}}\n\n## 概述\n\n{{metaData.intro}}\n\n## 划线 \n{% for chapter in chapterHighlights %}{% for highlight in chapter.highlights %}{% if not highlight.reviewContent %} \n\n> {{ highlight.markText | trim }}{% endif %}{% endfor %}{% endfor %}\n\n## 笔记\n{% for chapter in bookReview.chapterReviews %}{% if chapter.reviews or chapter.chapterReview %}{% if chapter.chapterReviews %}{% for chapterReview in chapter.chapterReviews %}\n\n💭{{ chapterReview.content }}{% endfor %}{% endif %}{% if chapter.reviews %}{% for review in chapter.reviews %}\n\n> {{ review.abstract | trim }}\n\n💭 {{review.content}}{% endfor %}{% endif %}{% endif %}{% endfor %}\n\n## 书评\n{% if bookReview.bookReviews %}{% for bookReview in bookReview.bookReviews %}\n> ✨{{ bookReview.mdContent }}{% endfor %}{% endif %}\n\n## 点评\n",
+  "template": "---\ntitle: {{metaData.title}}\ndescription: {{metaData.intro}}\nkeywords:\n  - {{metaData.title}}\n  - {{metaData.author}}\ntags:\n  - Personal/Book\n  - Read/{{metaData.category}}\nauthor: 仲平\ndate: <% tp.date.now(\"YYYY-MM-DD\") %>\n---\n\n## 简介\n\n- **书名**：《{{metaData.title}}》\n- **作者**： {{metaData.author}}\n- **分类**： {{metaData.category}}\n- **ISBN**：{{metaData.isbn}}\n- **出版社**：{{metaData.publisher}}\n\n## 概述\n\n{{metaData.intro}}\n\n## 划线 \n{% for chapter in chapterHighlights %}{% for highlight in chapter.highlights %}{% if not highlight.reviewContent %} \n\n> {{ highlight.markText | trim }}{% endif %}{% endfor %}{% endfor %}\n\n## 笔记\n{% for chapter in bookReview.chapterReviews %}{% if chapter.reviews or chapter.chapterReview %}{% if chapter.chapterReviews %}{% for chapterReview in chapter.chapterReviews %}\n\n💭{{ chapterReview.content }}{% endfor %}{% endif %}{% if chapter.reviews %}{% for review in chapter.reviews %}\n\n> {{ review.abstract | trim }}\n\n💭 {{review.content}}{% endfor %}{% endif %}{% endif %}{% endfor %}\n\n## 书评\n{% if bookReview.bookReviews %}{% for bookReview in bookReview.bookReviews %}\n> ✨{{ bookReview.mdContent }}{% endfor %}{% endif %}\n\n## 点评\n",
   "noteCountLimit": 10,
   "subFolderType": "category",
   "fileNameType": "BOOK_NAME",

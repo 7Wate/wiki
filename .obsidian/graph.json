@@ -1,22 +1,58 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
-  "showOrphans": false,
-  "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#FormalSciences/ComputerScience  ",
+      "color": {
+        "a": 1,
+        "rgb": 11454440
+      }
+    },
+    {
+      "query": "tag:#Professional  ",
+      "color": {
+        "a": 1,
+        "rgb": 9725885
+      }
+    },
+    {
+      "query": "tag:#Personal/Blog  ",
+      "color": {
+        "a": 1,
+        "rgb": 14149201
+      }
+    },
+    {
+      "query": "tag:#Personal/Book  ",
+      "color": {
+        "a": 1,
+        "rgb": 16374876
+      }
+    },
+    {
+      "query": "path:Personal/Journal  ",
+      "color": {
+        "a": 1,
+        "rgb": 15320170
+      }
+    }
+  ],
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 2,
-  "nodeSizeMultiplier": 1.99588853018665,
-  "lineSizeMultiplier": 1.99235526966848,
-  "collapse-forces": true,
-  "centerStrength": 0.50168837433671,
+  "textFadeMultiplier": -2.5,
+  "nodeSizeMultiplier": 2.49895833333333,
+  "lineSizeMultiplier": 1.50364583333333,
+  "collapse-forces": false,
+  "centerStrength": 0.5,
   "repelStrength": 20,
-  "linkStrength": 0.75,
-  "linkDistance": 400,
-  "scale": 0.09085236301906145,
+  "linkStrength": 0.716145833333333,
+  "linkDistance": 500,
+  "scale": 0.0889892578125,
   "close": true
 }

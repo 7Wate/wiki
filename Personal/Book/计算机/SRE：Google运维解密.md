@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "26271721"
-author: 仲平
-cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/721/26271721/t7_26271721.jpg
 reviewCount: 17
 noteCount: 132
+author: 仲平
+cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/721/26271721/t7_26271721.jpg
 readingStatus: 读完
 progress: 98%
 totalReadDay: 21
@@ -17,9 +17,9 @@ keywords:
   - SRE：Google运维解密
   - 贝特西·拜尔等
 tags:
-  - 阅读/计算机-计算机综合
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-计算机综合
+date: 2024-10-14
 
 ---
 

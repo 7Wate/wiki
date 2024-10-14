@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "3300024030"
-author: 仲平
-cover: https://cdn.weread.qq.com/weread/cover/30/3300024030/t7_3300024030.jpg
 reviewCount: 0
 noteCount: 12
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/30/3300024030/t7_3300024030.jpg
 readingStatus: 读完
 progress: 98%
 totalReadDay: 5
@@ -17,9 +17,9 @@ keywords:
   - Linux命令行与shell脚本编程大全（第4版）
   - 理查德·布卢姆  克里斯蒂娜·布雷斯纳汉　著
 tags:
-  - 阅读/计算机-编程设计
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-编程设计
+date: 2024-10-14
 
 ---
 

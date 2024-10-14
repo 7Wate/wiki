@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "30070660"
-author: 仲平
-cover: https://cdn.weread.qq.com/weread/cover/4/YueWen_30070660/t7_YueWen_30070660.jpg
 reviewCount: 0
 noteCount: 14
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/4/YueWen_30070660/t7_YueWen_30070660.jpg
 readingStatus: 读完
 progress: 99%
 totalReadDay: 2
@@ -17,9 +17,9 @@ keywords:
   - 从0到1：JavaScript 快速上手
   - 莫振杰
 tags:
-  - 阅读/计算机-数据库
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-数据库
+date: 2024-10-14
 
 ---
 

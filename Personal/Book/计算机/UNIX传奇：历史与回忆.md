@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "38493609"
-author: 仲平
-cover: https://cdn.weread.qq.com/weread/cover/94/YueWen_38493609/t7_YueWen_38493609.jpg
 reviewCount: 9
 noteCount: 107
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/94/YueWen_38493609/t7_YueWen_38493609.jpg
 readingStatus: 读完
 progress: 99%
 totalReadDay: 4
@@ -17,9 +17,9 @@ keywords:
   - UNIX传奇：历史与回忆
   - 布莱恩·W.克尼汉
 tags:
-  - 阅读/计算机-计算机综合
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-计算机综合
+date: 2024-10-14
 
 ---
 

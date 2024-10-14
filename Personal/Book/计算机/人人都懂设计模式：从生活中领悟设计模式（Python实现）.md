@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "25449864"
-author: 仲平
-cover: https://cdn.weread.qq.com/weread/cover/68/YueWen_25449864/t7_YueWen_25449864.jpg
 reviewCount: 0
 noteCount: 19
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/68/YueWen_25449864/t7_YueWen_25449864.jpg
 readingStatus: 读完
 progress: 100%
 totalReadDay: 10
@@ -17,9 +17,9 @@ keywords:
   - 人人都懂设计模式：从生活中领悟设计模式（Python实现）
   - 罗伟富
 tags:
-  - 阅读/计算机-编程设计
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-编程设计
+date: 2024-10-14
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "22806910"
-author: 仲平
-cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/910/22806910/t7_22806910.jpg
 reviewCount: 1
 noteCount: 33
+author: 仲平
+cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/910/22806910/t7_22806910.jpg
 readingStatus: 读过
 progress: 33%
 totalReadDay: 11
@@ -14,18 +14,18 @@ title: 流畅的Python
 description: 本书致力于帮助Python开发人员挖掘这门语言及相关程序库的优秀特性，避免重复劳动，同时写出简洁、流畅、易读、易维护，并且具有地道Python风格的代码。本书尤其深入探讨了Python语言的高级用法，涵盖数据结构、Python风格的对象、并行与并发，以及元编程等不同的方面。
 keywords:
   - 流畅的Python
-  - 卢西亚诺·拉马略
+  - 【巴】卢西亚诺·拉马略
 tags:
-  - 阅读/计算机-编程设计
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-编程设计
+date: 2024-10-14
 
 ---
 
 ## 简介
 
 - **书名**：《流畅的Python》
-- **作者**： 卢西亚诺·拉马略
+- **作者**： 【巴】卢西亚诺·拉马略
 - **分类**： 计算机-编程设计
 - **ISBN**：9787115454157
 - **出版社**：人民邮电出版社

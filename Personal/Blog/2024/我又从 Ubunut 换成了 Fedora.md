@@ -5,8 +5,9 @@ keywords:
   - Ubuntu
   - Fedora
 tags:
-  - 博客/原创
-  - Linux/安装
+  - Blog/开源
+  - Linux
+  - Personal/Blog
 authors:
   - 仲平
 date: 2024-03-05

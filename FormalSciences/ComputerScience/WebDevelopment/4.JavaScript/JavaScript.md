@@ -5,8 +5,8 @@ keywords:
   - JavaScript
   - ES6
 tags:
-  - FullStack/基础
-sidebar_position: 3
+  - FormalSciences/ComputerScience
+  - Webdevelopment/JavaScript
 author: 7Wate
 date: 2023-10-13
 ---

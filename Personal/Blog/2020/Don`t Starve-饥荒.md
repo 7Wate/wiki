@@ -7,8 +7,8 @@ keywords:
   - 沙盒
   - 邀请
 tags:
-  - 游戏/饥荒
-  - 博客/原创
+  - Blog/游戏
+  - Personal/Blog
 authors:
   - 7Wate
 date: 2020-09-03

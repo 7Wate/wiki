@@ -4,8 +4,8 @@ description: CSS 样式表
 keywords:
   - CSS
 tags:
-  - FullStack/基础
-sidebar_position: 2
+  - FormalSciences/ComputerScience
+  - webDevelopment/CSS
 author: 7Wate
 date: 2023-10-13
 ---

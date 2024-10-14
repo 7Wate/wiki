@@ -6,8 +6,8 @@ keywords:
   - 项目部署
   - 解决方案
 tags:
-  - 博客/原创
-  - Python/项目
+  - Blog/开源
+  - Personal/Blog
 authors:
   - 仲平
 date: 2024-01-24

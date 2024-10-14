@@ -7,8 +7,9 @@ keywords:
   - CI
   - CD
 tags:
-  - 博客/原创
-  - Git/高级
+  - Blog/开源
+  - SoftwareEngineering/Automation
+  - Personal/Blog
 authors:
   - 仲平
 date: 2023-12-22

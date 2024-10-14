@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "933889"
-author: 仲平
-cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/889/933889/t7_933889.jpg
 reviewCount: 1
 noteCount: 16
+author: 仲平
+cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/889/933889/t7_933889.jpg
 readingStatus: 读完
 progress: 100%
 totalReadDay: 15
@@ -17,9 +17,9 @@ keywords:
   - IT基础架构：系统运维实践
   - 赵旻
 tags:
-  - 阅读/计算机-理论知识
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-理论知识
+date: 2024-10-14
 
 ---
 

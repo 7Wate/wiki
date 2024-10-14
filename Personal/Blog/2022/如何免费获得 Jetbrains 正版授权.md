@@ -5,8 +5,8 @@ keywords:
   - Jetbrains
   - 开源授权
 tags:
-  - 生产力工具/Jetbrains
-  - 博客/原创
+  - Blog/工作
+  - Personal/Blog
 authors:
   - 7Wate
 date: 2022-03-18

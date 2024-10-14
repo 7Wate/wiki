@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "3300024033"
-author: 仲平
-cover: https://cdn.weread.qq.com/weread/cover/33/3300024033/t7_3300024033.jpg
 reviewCount: 2
 noteCount: 17
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/33/3300024033/t7_3300024033.jpg
 readingStatus: 读完
 progress: 100%
 totalReadDay: 6
@@ -17,9 +17,9 @@ keywords:
   - Python编程轻松进阶
   - 阿尔·斯维加特　著
 tags:
-  - 阅读/计算机-编程设计
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-编程设计
+date: 2024-10-14
 
 ---
 

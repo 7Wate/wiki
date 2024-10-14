@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "39130662"
-author: 仲平
-cover: https://cdn.weread.qq.com/weread/cover/50/YueWen_39130662/t7_YueWen_39130662.jpg
 reviewCount: 0
 noteCount: 13
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/50/YueWen_39130662/t7_YueWen_39130662.jpg
 readingStatus: 读完
 progress: 99%
 totalReadDay: 5
@@ -17,9 +17,9 @@ keywords:
   - 虚拟化工程师运维实战：VMware服务器虚拟化+Citrix桌面/应用虚拟化+Veeam备份+Zabbix监控
   - 孟鹏编著
 tags:
-  - 阅读/计算机-编程设计
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-编程设计
+date: 2024-10-14
 
 ---
 

@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🧑",
       "🧰",
       "📐",
       "📚",
-      "💼",
-      "🧑‍💻"
+      "💼"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -35,7 +35,7 @@
   },
   "Archive": "📦",
   "NaturalSciences": "🌍",
-  "Personal": "🧑‍💻",
+  "Personal": "🧑",
   "SocialSciences": "📚",
   "FormalSciences": "📐",
   "Obsidian": "🧰",

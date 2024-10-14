@@ -7,8 +7,9 @@ keywords:
   - 个人
   - 知识库
 tags:
-  - 开源项目/数字文具盒
-  - 博客/原创
+  - Project/数字文具盒
+  - Blog/开源
+  - Personal/Blog
 authors:
   - 7Wate
 date: 2023-06-28

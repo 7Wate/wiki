@@ -6,8 +6,8 @@ keywords:
   - 历险记
   - 海淘
 tags:
-  - 写作/测评
-  - 博客/原创
+  - Blog/随笔
+  - Personal/Blog
 authors:
   - 7Wate
 date: 2023-01-10

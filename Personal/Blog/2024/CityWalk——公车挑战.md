@@ -5,8 +5,8 @@ keywords:
   - CityWalk
   - 公车挑战
 tags:
-  - 博客/原创
-  - 生活/随笔
+  - Blog/随笔
+  - Personal/Blog
 authors:
   - 仲平
 date: 2024-03-06

@@ -4,8 +4,8 @@ description: HTML 超文本标记语言
 keywords:
   - HTML
 tags:
-  - FullStack/基础
-sidebar_position: 1
+  - FormalSciences/ComputerScience
+  - webDevelopment/HTML
 author: 7Wate
 date: 2023-10-13
 ---

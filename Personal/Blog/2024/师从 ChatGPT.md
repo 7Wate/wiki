@@ -7,8 +7,8 @@ keywords:
   - 思维模型
   - ChatGPT
 tags:
-  - 成长/个人
-  - 博客/原创
+  - Blog/感悟
+  - Personal/Blog
 authors:
   - 仲平
 date: 2024-04-17

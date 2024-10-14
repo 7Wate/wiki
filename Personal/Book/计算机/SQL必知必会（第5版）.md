@@ -1,10 +1,10 @@
 ---
 doc_type: weread-highlights-reviews
 bookId: "34336685"
-author: 仲平
-cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/685/34336685/t7_34336685.jpg
 reviewCount: 0
 noteCount: 26
+author: 仲平
+cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/685/34336685/t7_34336685.jpg
 readingStatus: 读完
 progress: 99%
 totalReadDay: 4
@@ -17,9 +17,9 @@ keywords:
   - SQL必知必会（第5版）
   - 本·福达
 tags:
-  - 阅读/计算机-数据库
-  - 阅读/笔记
-date: 2024-04-29
+  - Personal/Book
+  - Read/计算机-数据库
+date: 2024-10-14
 
 ---
 

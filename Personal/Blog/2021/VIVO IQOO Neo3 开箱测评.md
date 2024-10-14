@@ -7,8 +7,8 @@ keywords:
   - Neo3
   - 开箱测评
 tags:
-  - 写作/测评
-  - 博客/原创
+  - Blog/写作
+  - Personal/Blog
 authors:
   - 7Wate
 date: 2021-02-23
